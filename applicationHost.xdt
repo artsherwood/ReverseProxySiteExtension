@@ -14,7 +14,7 @@
     <proxy xdt:Transform="InsertIfMissing" enabled="true" preserveHostHeader="false" reverseRewriteHostInResponseHeaders="false" />  
     <rewrite>
         <allowedServerVariables>
-          <add name="HTTP_ACCEPT_ENCODING" xdt:Transform="Insert" />
+          <add name="HTTP_ACCEPT_ENCODING" xdt:Transform="InsertIfMissing" />
         </allowedServerVariables>
       </rewrite>
   </system.webServer>
